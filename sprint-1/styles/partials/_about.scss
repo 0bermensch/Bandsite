@@ -17,6 +17,7 @@ html, body {
   color: $black;
   font-size: 24px;
   align-items: flex-start;
+  margin-right: 17%;
   }
 
   &__image {
@@ -66,6 +67,8 @@ html, body {
     font-family: 'avenir-bold';
     color: $black;
     font-size: 36px;
+    margin-right: 40%;
+    width: 60%;
     }
   
     &__image {
@@ -112,7 +115,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 48px 12.5% 0;
+    margin: 96px 12.5% 0;
     align-items: center;
     text-align: left;
   
@@ -121,7 +124,8 @@ html, body {
     font-family: 'avenir-bold';
     color: $black;
     font-size: 36px;
-    align-items: flex-start;;
+    margin-right: 45%;
+
     }
   
     &__image {
@@ -131,31 +135,30 @@ html, body {
       background-position: center;
       background-size: cover;
     }
+
+    &__content {
+      width: 83%;
+    }
     &__content--quote {
       font-family: 'avenir-demibold';
       font-size: 24px;
       margin-bottom: 40px;
-      width: 83%;
     }
   
     &__content--quoter {
       font-family: 'avenir-demibold';
       font-size: 14px;
       margin-bottom: 56px;
-      width: 83%;
     }
   
     &__content--maintext--title {
       font-family: 'avenir-demibold';
       font-size: 24px;
       margin-bottom: 32px;
-      width: 83%;
-    }
 
     &__content--maintext--container {
       display: flex;
       flex-direction: row;
-      width: 83%;
     }
   
     &__content--maintext {
@@ -165,4 +168,5 @@ html, body {
       text-align: left;
   }
   }
+}
 }

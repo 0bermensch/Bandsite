@@ -1,0 +1,131 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $alabaster;
+
+  &__title {
+    font-family: 'avenir-bold';
+    font-size: 24px;
+    color: $black;
+    margin: 48px 0 16px 16px;
+  }
+
+  &__layout {
+    align-items: center;
+  }
+
+  &__layout--photos {
+    height: 50.6vw;
+    margin: 8px 16px;
+  }
+
+}
+
+@include medium {
+
+  .gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-family: 'avenir-bold';
+    font-size: 36px;
+    color: $black;
+    align-items: initial;
+    margin-right: 65%;
+  }
+
+  &__layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 24px;
+  }
+
+  &__layout--column1 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 12px;
+  }
+
+  &__layout--column2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 12px;
+  }
+
+  &__layout--column3 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 12px;
+  }
+
+  &__layout--photos {
+    width: 100%;
+    height: 16.5vw;
+    margin: 12px 0;
+  }
+}
+
+}
+
+@include large {
+  .gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &__title {
+      font-family: 'avenir-bold';
+      font-size: 36px;
+      color: $black;
+      align-items: initial;
+      margin-right: 58%;
+    }
+  
+    &__layout {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 12.5%;
+    }
+  
+    &__layout--column1 {
+      display: flex;
+      flex-direction: column;
+      width: 33%;
+      margin: 0 12px;
+    }
+  
+    &__layout--column2 {
+      display: flex;
+      flex-direction: column;
+      width: 33%;
+      margin: 0 12px;
+    }
+  
+    &__layout--column3 {
+      display: flex;
+      flex-direction: column;
+      width: 33%;
+      margin: 0 12px;
+    }
+  
+    &__layout--photos {
+      width: 100%;
+      height: 13.5vw;
+      margin: 12px 0;
+    }
+  }
+  
+  }
+
+
+
