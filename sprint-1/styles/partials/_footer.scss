@@ -1,0 +1,175 @@
+.footer {
+  background-color: $black;
+
+
+  &__title {
+    font-family: 'avenir-bold';
+    font-size: 24px;
+    color: $white;
+    margin: 15px 0 24px 13px;
+    padding-top: 15px;
+  }
+
+  &__logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 50%;
+  }
+
+  &__bandlogo {
+    display: none;
+  }
+
+
+  &__content--column1, &__content--column2, &__content--column3 {
+    list-style-type: none;
+  }
+
+
+  &__content--title1, &__content--title2 {
+    font-family: 'avenir-demibold';
+    font-size: 14px;
+    color: $white
+    padding-left: 0;
+  }
+
+  &__content--context1, &__content--context2, &__content--context3 {
+    font-family: 'avenir-regular';
+    font-size: 13px;
+    color: $mercury;
+    width: 50%;
+    padding-left: 0;
+  }
+}
+
+@include medium {
+
+  .footer {
+    background-color: $black;
+
+    &__upper {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__title {
+      font-family: 'avenir-bold';
+      font-size: 24px;
+      color: $white;
+      margin: 15px 0 24px 13px;
+      padding-top: 15px;
+    }
+  
+    &__logos{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-right: 50%;
+    }
+
+    &__bandlogo {
+      margin: 1px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__end {
+      color: $mercury;
+    }
+}
+}
+
+@include large {
+  .footer {
+    background-color: $black;
+  
+  
+    &__title {
+      font-family: 'avenir-bold';
+      font-size: 24px;
+      color: $white;
+      margin: 15px 0 24px 13px;
+      padding-top: 15px;
+    }
+  
+    &__logos{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-right: 50%;
+    }
+  
+    &__bandlogo {
+      display: none;
+    }
+  
+  
+    &__content--column1, &__content--column2, &__content--column3 {
+      list-style-type: none;
+    }
+  
+  
+    &__content--title1, &__content--title2 {
+      font-family: 'avenir-demibold';
+      font-size: 14px;
+      color: $white
+      padding-left: none;
+    }
+  
+    &__content--context1, &__content--context2, &__content--context3 {
+      font-family: 'avenir-regular';
+      font-size: 13px;
+      color: $mercury;
+      width: 50%;
+      padding-left: none;
+    }
+  }
+  
+  @include medium {
+  
+    .footer {
+      background-color: $black;
+  
+      &__upper {
+        display: flex;
+        flex-direction: row;
+        margin: 0 12.5%;
+      }
+  
+      &__title {
+        font-family: 'avenir-bold';
+        font-size: 24px;
+        color: $white;
+        margin: 15px 0 24px 13px;
+        padding-top: 15px;
+      }
+    
+      &__logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 50%;
+      }
+  
+      &__bandlogo {
+  margin: 1px;
+      }
+  
+      &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 12.5%;
+
+      }
+  
+      &__end {
+        color: $mercury;
+      }
+  }
+}

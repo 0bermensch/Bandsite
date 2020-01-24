@@ -44,8 +44,10 @@ body {
   font-size: 24px;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom: 16px;
+  margin-bottom: 7px;
   font-family: 'avenir-demibold';
+  margin-top: auto;
+  padding-top: 10px;
 }
 
 .header__navbar {
@@ -697,5 +699,51 @@ html, body {
     height: 13.5vw;
     margin: 12px 0;
   }
+}
+
+.footer {
+  background-color: #323232;
+}
+
+.footer__title {
+  font-family: 'avenir-bold';
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 15px 0 24px 13px;
+  padding-top: 15px;
+}
+
+.footer__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 50%;
+}
+
+.footer__content--column1, .footer__content--column2, .footer__content--column3 {
+  list-style-type: none;
+}
+
+.footer__content--title1, .footer__content--title2 {
+  font-family: 'avenir-demibold';
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.footer__content--context1, .footer__content--context2, .footer__content--context3 {
+  font-family: 'avenir-regular';
+  font-size: 13px;
+  color: #E1E1E1;
+  width: 50%;
+}
+
+.footer__end {
+  color: #E1E1E1;
 }
 /*# sourceMappingURL=main.css.map */
