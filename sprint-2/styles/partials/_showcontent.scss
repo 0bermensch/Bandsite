@@ -1,0 +1,258 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.shows__title {
+  font-family: "avenir_bold";
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.shows__content--title {
+  display: none;
+}
+
+.shows {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 5% 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    font-family: "avenir_demibold";
+    font-size: 12px;
+    border-bottom: 1px solid $silver;
+  }
+
+  &__content--date {
+    font-family: "avenir_demibold";
+    margin: 24px 0 0;
+    font-size: 12px;
+    color: $silver;
+  }
+
+  &__content--date--context {
+    margin: 16px 0 0;
+  }
+
+  &__content--venue {
+    font-size: 12px;
+    color: $silver;
+    margin-top: 24px;
+  }
+
+  &__content--venue--context {
+    font-size: 12px;
+    color: $black;
+    margin: 16px 0 0;
+  }
+
+  &__content--location {
+    font-size: 12px;
+    color: $silver;
+    margin-top: 24px;
+  }
+
+  &__content--location--context {
+    font-size: 12px;
+    color: $black;
+    margin: 16px 0 0;
+  }
+
+  &__content--button {
+    height: 40px;
+    margin: 32px 0 16px;
+    background-color: $black;
+    font-family: "avenir-demibold";
+    color: $white;
+    padding: 0;
+    border-radius: 3px;
+  }
+}
+
+@include medium {
+  // .shows__top {
+  //   margin: 40px 3%;
+  // }
+
+  .shows__title {
+    font-family: "avenir_bold";
+    font-size: 36px;
+    margin: 40px 3% 16px;
+  }
+
+  .shows__content--title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: $silver;
+    font-family: "avenir-demibold";
+    font-size: 14px;
+    margin: 0 3%;
+  }
+
+  .shows__content--title--date {
+    width: 29%;
+  }
+
+  .shows__content--title--venue {
+    width: 13%;
+  }
+
+  .shows__content--title--location {
+    width: 16%;
+  }
+
+  .shows__content--title--space {
+    width: 23%;
+  }
+
+  .shows {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 3% 0;
+
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: "avenir_demibold";
+      font-size: 14px;
+      border-bottom: 1px solid $silver;
+      color: $black;
+      align-items: center;
+    }
+
+    &__content--date {
+      display: none;
+    }
+
+    &__content--date--context {
+      font-family: 16px;
+      font-weight: bold;
+      margin: 16px 0 0;
+      width: 29%;
+    }
+
+    &__content--venue {
+      display: none;
+    }
+
+    &__content--venue--context {
+      font-family: "avenir-regular";
+      color: $black;
+      margin: 16px 0 0;
+      width: 13%;
+    }
+
+    &__content--location {
+      display: none;
+    }
+
+    &__content--location--context {
+      font-family: "avenir-regular";
+      color: $black;
+      margin: 16px 0 0;
+      width: 16%;
+    }
+
+    &__content--button {
+      width: 23%;
+      height: 40px;
+      margin: 32px 0 16px;
+      background-color: $black;
+      font-family: "avenir-demibold";
+      font-size: 16px;
+      color: $white;
+      padding: 0;
+      border-radius: 6px;
+    }
+  }
+}
+
+@include large {
+  .shows__top {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .shows__title {
+    font-family: "avenir_bold";
+    font-size: 24px;
+
+    margin-bottom: 16px;
+  }
+
+  .shows__content--title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: $silver;
+  }
+
+  .shows {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 5% 0;
+
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: "avenir_demibold";
+      font-size: 12px;
+      border-bottom: 1px solid $silver;
+    }
+
+    &__content--date {
+      display: none;
+      font-family: "avenir_demibold";
+      margin: 24px 0 0;
+      font-size: 12px;
+      color: $silver;
+    }
+
+    &__content--date--context {
+      margin: 16px 0 0;
+    }
+
+    &__content--venue {
+      display: none;
+      font-size: 12px;
+      color: $silver;
+      margin-top: 24px;
+    }
+
+    &__content--venue--context {
+      font-size: 12px;
+      color: $black;
+      margin: 16px 0 0;
+    }
+
+    &__content--location {
+      display: none;
+      font-size: 12px;
+      color: $silver;
+      margin-top: 24px;
+    }
+
+    &__content--location--context {
+      font-size: 12px;
+      color: $black;
+      margin: 16px 0 0;
+    }
+
+    &__content--button {
+      height: 100px;
+      margin: 32px 0 16px;
+      background-color: $black;
+      font-family: "avenir-demibold";
+      color: $white;
+      padding: 0;
+      border-radius: 3px;
+    }
+  }
+}
