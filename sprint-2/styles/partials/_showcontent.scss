@@ -74,10 +74,6 @@ body {
 }
 
 @include medium {
-  // .shows__top {
-  //   margin: 40px 3%;
-  // }
-
   .shows__title {
     font-family: "avenir_bold";
     font-size: 36px;
@@ -91,7 +87,7 @@ body {
     color: $silver;
     font-family: "avenir-demibold";
     font-size: 14px;
-    margin: 0 3%;
+    margin: 10px 3%;
   }
 
   .shows__content--title--date {
@@ -113,7 +109,7 @@ body {
   .shows {
     display: flex;
     flex-direction: column;
-    margin: 32px 3% 0;
+    margin: 0 3%;
 
     &__content {
       display: flex;
@@ -177,13 +173,14 @@ body {
   .shows__top {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-top: 48px;
   }
 
   .shows__title {
     font-family: "avenir_bold";
-    font-size: 24px;
-
-    margin-bottom: 16px;
+    font-size: 36px;
+    margin: 0 0 0 12.5%;
   }
 
   .shows__content--title {
@@ -191,12 +188,31 @@ body {
     flex-direction: row;
     justify-content: space-between;
     color: $silver;
+    width: 57.5%;
+    margin: 0 12.5% 0 0;
+  }
+
+  .shows__content--title--date {
+    width: 29%;
+  }
+
+  .shows__content--title--venue {
+    width: 13%;
+  }
+
+  .shows__content--title--location {
+    width: 16%;
+  }
+
+  .shows__content--title--space {
+    width: 23%;
+    margin: 0 1px;
   }
 
   .shows {
     display: flex;
     flex-direction: column;
-    margin: 32px 5% 0;
+    margin: 0px 12.5% 0 30%;
 
     &__content {
       display: flex;
@@ -216,7 +232,7 @@ body {
     }
 
     &__content--date--context {
-      margin: 16px 0 0;
+      margin: 16px 0;
     }
 
     &__content--venue {
@@ -229,7 +245,7 @@ body {
     &__content--venue--context {
       font-size: 12px;
       color: $black;
-      margin: 16px 0 0;
+      margin: 16px 0;
     }
 
     &__content--location {
@@ -242,17 +258,17 @@ body {
     &__content--location--context {
       font-size: 12px;
       color: $black;
-      margin: 16px 0 0;
+      margin: 16px 0;
     }
 
     &__content--button {
-      height: 100px;
-      margin: 32px 0 16px;
+      height: 48px;
+      margin: 0 0 16px;
       background-color: $black;
       font-family: "avenir-demibold";
       color: $white;
       padding: 0;
-      border-radius: 3px;
+      border-radius: 6px;
     }
   }
 }

@@ -405,7 +405,7 @@ body {
     color: #AFAFAF;
     font-family: "avenir-demibold";
     font-size: 14px;
-    margin: 0 3%;
+    margin: 10px 3%;
   }
   .shows__content--title--date {
     width: 29%;
@@ -427,7 +427,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 32px 3% 0;
+    margin: 0 3%;
   }
   .shows__content {
     display: -webkit-box;
@@ -497,11 +497,15 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 48px;
   }
   .shows__title {
     font-family: "avenir_bold";
-    font-size: 24px;
-    margin-bottom: 16px;
+    font-size: 36px;
+    margin: 0 0 0 12.5%;
   }
   .shows__content--title {
     display: -webkit-box;
@@ -515,6 +519,21 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     color: #AFAFAF;
+    width: 57.5%;
+    margin: 0 12.5% 0 0;
+  }
+  .shows__content--title--date {
+    width: 29%;
+  }
+  .shows__content--title--venue {
+    width: 13%;
+  }
+  .shows__content--title--location {
+    width: 16%;
+  }
+  .shows__content--title--space {
+    width: 23%;
+    margin: 0 1px;
   }
   .shows {
     display: -webkit-box;
@@ -524,7 +543,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 32px 5% 0;
+    margin: 0px 12.5% 0 30%;
   }
   .shows__content {
     display: -webkit-box;
@@ -549,7 +568,7 @@ body {
     color: #AFAFAF;
   }
   .shows__content--date--context {
-    margin: 16px 0 0;
+    margin: 16px 0;
   }
   .shows__content--venue {
     display: none;
@@ -560,7 +579,7 @@ body {
   .shows__content--venue--context {
     font-size: 12px;
     color: #323232;
-    margin: 16px 0 0;
+    margin: 16px 0;
   }
   .shows__content--location {
     display: none;
@@ -571,16 +590,16 @@ body {
   .shows__content--location--context {
     font-size: 12px;
     color: #323232;
-    margin: 16px 0 0;
+    margin: 16px 0;
   }
   .shows__content--button {
-    height: 100px;
-    margin: 32px 0 16px;
+    height: 48px;
+    margin: 0 0 16px;
     background-color: #323232;
     font-family: "avenir-demibold";
     color: #FFFFFF;
     padding: 0;
-    border-radius: 3px;
+    border-radius: 6px;
   }
 }
 

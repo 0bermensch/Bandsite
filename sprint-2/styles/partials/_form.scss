@@ -1,0 +1,52 @@
+.comment--title {
+  font-family: "avenir-bold";
+  font-size: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    font-family: "avenir-demibold";
+    color: $silver;
+  }
+
+  &__name--input {
+    width: 70%;
+  }
+
+  &__comment {
+    display: flex;
+    flex-direction: column;
+    font-family: "avenir-demibold";
+    color: $silver;
+  }
+
+  &__comment--input {
+    width: 70%;
+  }
+
+  &__button {
+    width: 70%;
+    font-family: "avenir-demibold";
+    color: $white;
+    background-color: $black;
+  }
+}
+
+.default--comment--upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.default--comment--pic {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+}
