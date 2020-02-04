@@ -1,0 +1,477 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.comment--title {
+  font-family: "avenir-bold";
+  font-size: 24px;
+  margin: 32px 5% 40px;
+}
+
+#form--section {
+  display: flex;
+  flex-direction: row;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin: 0 5%;
+  width: 70%;
+
+  &__pic {
+    height: 30px;
+    width: 30px;
+    background-color: #555;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    font-family: "avenir-demibold";
+    font-size: 13px;
+    color: $silver;
+  }
+
+  &__name--input {
+    width: 98%;
+    height: 30px;
+    background-color: $alabaster;
+    border-radius: 5px;
+  }
+
+  &__comment {
+    display: flex;
+    flex-direction: column;
+    font-family: "avenir-demibold";
+    font-size: 13px;
+    color: $silver;
+    margin-top: 13px;
+  }
+
+  &__comment--input {
+    width: 98%;
+    height: 90px;
+    background-color: $alabaster;
+    border-radius: 5px;
+  }
+
+  &__button {
+    width: 100%;
+    font-family: "avenir-demibold";
+    color: $white;
+    background-color: $black;
+    height: 40px;
+    margin-top: 13px;
+    margin-bottom: 32px;
+    border-radius: 5px;
+  }
+}
+
+.comment {
+  margin: 0 5%;
+
+  &__output {
+    border: 0.5px solid $alabaster;
+  }
+
+  &__upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+
+  &__pic {
+    height: 30px;
+    width: 30px;
+    background-color: #555;
+    border-radius: 50%;
+    margin-top: 12px;
+  }
+
+  &__name {
+    margin: 0;
+  }
+
+  &__date {
+    font-family: "avenir-regular";
+    color: $silver;
+    font-size: 12px;
+    align-items: center;
+    margin: 0em;
+  }
+
+  &__comment {
+    margin: 0 0 24px 20%;
+  }
+}
+
+.defaultcomment {
+  margin: 0 5%;
+
+  &__section {
+    border: 0.5px solid $alabaster;
+  }
+
+  &__upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+
+  &__pic {
+    height: 30px;
+    width: 30px;
+    background-color: #555;
+    border-radius: 50%;
+    margin-top: 12px;
+  }
+
+  &__name {
+    margin: 0;
+  }
+
+  &__date {
+    font-family: "avenir-regular";
+    color: $silver;
+    font-size: 12px;
+    align-items: center;
+    margin: 0em;
+  }
+
+  &__comment {
+    margin: 0 0 24px 20%;
+  }
+}
+
+@include medium {
+  .comment--title {
+    font-family: "avenir-bold";
+    font-size: 24px;
+    margin: 32px 5% 40px;
+  }
+
+  #form--section {
+    display: flex;
+    flex-direction: row;
+    width: 68%;
+    margin: 0 16%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin: 0;
+    width: 100%;
+
+    &__pic {
+      height: 30px;
+      width: 30px;
+      background-color: #555;
+      border-radius: 50%;
+      margin: 20px 20px 0 0;
+    }
+
+    &__name {
+      display: flex;
+      flex-direction: column;
+      font-family: "avenir-demibold";
+      font-size: 13px;
+      color: $silver;
+    }
+
+    &__name--input {
+      width: 98%;
+      height: 30px;
+      background-color: $alabaster;
+      border-radius: 5px;
+    }
+
+    &__comment {
+      display: flex;
+      flex-direction: column;
+      font-family: "avenir-demibold";
+      font-size: 13px;
+      color: $silver;
+      margin-top: 13px;
+    }
+
+    &__comment--input {
+      width: 98%;
+      height: 90px;
+      background-color: $alabaster;
+      border-radius: 5px;
+    }
+
+    &__button {
+      width: 25%;
+      font-family: "avenir-demibold";
+      color: $white;
+      background-color: $black;
+      height: 40px;
+      margin: 13px 0 32px 74%;
+      border-radius: 5px;
+      align-items: right;
+    }
+  }
+
+  .comment {
+    margin: 0 16%;
+
+    &__output {
+      border: 0.5px solid $alabaster;
+    }
+
+    &__upper {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      margin-top: 24px;
+    }
+
+    &__pic {
+      height: 30px;
+      width: 30px;
+      background-color: #555;
+      border-radius: 50%;
+      margin: 0 4% 0 0;
+    }
+
+    &__name {
+      margin: 0 3% 0 0;
+      font-family: "avenir-demibold";
+      font-size: 16px;
+    }
+
+    &__date {
+      font-family: "avenir-regular";
+      color: $silver;
+      font-size: 12px;
+      align-items: center;
+      margin: 5px 0 0 0;
+    }
+
+    &__comment {
+      margin: 0 0 24px 10%;
+      font-family: "avenir-regular";
+      font-size: 14px;
+    }
+  }
+
+  .defaultcomment {
+    margin: 0 16%;
+
+    &__section {
+      border: 0.5px solid $alabaster;
+    }
+
+    &__upper {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      margin-top: 24px;
+    }
+
+    &__pic {
+      height: 30px;
+      width: 30px;
+      background-color: #555;
+      border-radius: 50%;
+      margin: 0 4% 0 0;
+    }
+
+    &__name {
+      margin: 0 3% 0 0;
+      font-family: "avenir-demibold";
+      font-size: 16px;
+    }
+
+    &__date {
+      font-family: "avenir-regular";
+      color: $silver;
+      font-size: 12px;
+      align-items: center;
+      margin: 5px 0 0 0;
+    }
+
+    &__comment {
+      margin: 0 0 24px 10%;
+      font-family: "avenir-regular";
+      font-size: 14px;
+    }
+  }
+}
+
+@include large {
+  .comment--title {
+    font-family: "avenir-bold";
+    font-size: 36px;
+    margin: 48px 0 56px 12.5%;
+  }
+
+  #form--section {
+    display: flex;
+    flex-direction: row;
+    width: 36.6%;
+    margin: 0 31.6%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin: 0;
+    width: 100%;
+
+    &__pic {
+      height: 48px;
+      width: 48px;
+      background-color: #555;
+      border-radius: 50%;
+      margin: 20px 20px 0 0;
+    }
+
+    &__name {
+      display: flex;
+      flex-direction: column;
+      font-family: "avenir-demibold";
+      font-size: 13px;
+      color: $silver;
+    }
+
+    &__name--input {
+      width: 98%;
+      height: 48px;
+      background-color: $alabaster;
+      border-radius: 5px;
+      margin-top: 8px;
+    }
+
+    &__comment {
+      display: flex;
+      flex-direction: column;
+      font-family: "avenir-demibold";
+      font-size: 13px;
+      color: $silver;
+      margin-top: 24px;
+    }
+
+    &__comment--input {
+      width: 98%;
+      height: 96px;
+      background-color: $alabaster;
+      border-radius: 5px;
+      margin-top: 8px;
+    }
+
+    &__button {
+      width: 35%;
+      font-family: "avenir-demibold";
+      color: $white;
+      background-color: $black;
+      height: 48px;
+      margin: 24px 0 24px 64%;
+      border-radius: 5px;
+      align-items: right;
+    }
+  }
+
+  .comment {
+    width: 36.6%;
+    margin: 0 31.6%;
+
+    &__output {
+      border: 0.5px solid $alabaster;
+    }
+
+    &__upper {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      margin-top: 0;
+      padding-top: 24px;
+    }
+
+    &__pic {
+      height: 30px;
+      width: 30px;
+      background-color: #555;
+      border-radius: 50%;
+      margin: 0 3% 0 0;
+    }
+
+    &__name {
+      margin: 0 3% 0 0;
+      font-family: "avenir-demibold";
+      font-size: 16px;
+    }
+
+    &__date {
+      font-family: "avenir-regular";
+      color: $silver;
+      font-size: 12px;
+      align-items: center;
+      margin: 5px 0 0 0;
+    }
+
+    &__comment {
+      margin: 0 0 24px 10%;
+      font-family: "avenir-regular";
+      font-size: 14px;
+    }
+  }
+
+  .defaultcomment {
+    width: 36.6%;
+    margin: 0 31.6%;
+
+    &__section {
+      border: 0.5px solid $alabaster;
+    }
+
+    &__upper {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      margin-top: 0;
+      padding-top: 24px;
+    }
+
+    &__pic {
+      height: 30px;
+      width: 30px;
+      background-color: #555;
+      border-radius: 50%;
+      margin: 0 3% 0 0;
+    }
+
+    &__name {
+      margin: 0 3% 0 0;
+      font-family: "avenir-demibold";
+      font-size: 16px;
+    }
+
+    &__date {
+      font-family: "avenir-regular";
+      color: $silver;
+      font-size: 12px;
+      align-items: center;
+      margin: 5px 0 0 0;
+    }
+
+    &__comment {
+      margin: 0 0 24px 10%;
+      font-family: "avenir-regular";
+      font-size: 14px;
+    }
+  }
+}

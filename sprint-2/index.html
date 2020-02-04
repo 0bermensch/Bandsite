@@ -14,7 +14,7 @@
           Biography
         </h2>
         <h2 class="header__navbar--optionsright">
-          Shows
+          <a href="./pages/shows.html"> Shows</a>
         </h2>
       </nav>
     </header>
@@ -122,33 +122,35 @@
       </div>
     </article>
 
-    <div class="comment--title">
-      <h2>Join The Conversation</h2>
+    <div>
+      <h2 class="comment--title">Join The Conversation</h2>
     </div>
 
-    <form class="form" id="comment--form">
+    <section id="form--section">
       <div class="form__pic"></div>
-      <label class="form__name"
-        >Name<input
-          class="form__name--input"
-          type="text"
-          name="name"
-          placeholder="Name"
-      /></label>
-      <label class="form__comment"
-        >Comment<input
-          class="form__comment--input"
-          type="text"
-          name="comment"
-          placeholder="comment"
-      /></label>
+      <form class="form" id="comment__form">
+        <label class="form__name"
+          >NAME<input
+            class="form__name--input"
+            type="text"
+            name="name"
+            placeholder="Name"
+        /></label>
+        <label class="form__comment"
+          >COMMENT<input
+            class="form__comment--input"
+            type="text"
+            name="comment"
+            placeholder="Add New Comment"
+        /></label>
 
-      <button class="form__button" type="submit">COMMENT/button>
-    </form>
+        <button class="form__button" type="submit">COMMENT</button>
+      </form>
+    </section>
 
-    <div class="user--comment"></div>
+    <div class="comment"></div>
 
-    <div class="default--comment"></div>
+    <div class="defaultcomment"></div>
 
     <footer class="footer">
       <div class="footer__upper">

@@ -4,6 +4,11 @@ body {
   padding: 0;
 }
 
+a {
+  color: $mercury;
+  text-decoration: none;
+}
+
 .header {
   align-items: center;
   width: 100%;
@@ -11,31 +16,30 @@ body {
   background-color: $black;
   margin: 0;
 
-
   &__title {
     font-size: 24px;
     text-align: center;
     color: $white;
     margin-bottom: 7px;
-    font-family: 'avenir-demibold'; 
-    margin-top: auto;    
-    padding-top: 10px; 
-    }
+    font-family: "avenir-demibold";
+    margin-top: auto;
+    padding-top: 10px;
+  }
 
   &__navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   &__navbar--optionsleft {
-  width: 50%;
-  font-size: 14px;
-  text-align: center;
-  color: $mercury;
-  margin: 0;
-  padding: 8px;
-  font-family: 'avenir-demibold';
+    width: 50%;
+    font-size: 14px;
+    text-align: center;
+    color: $mercury;
+    margin: 0;
+    padding: 8px;
+    font-family: "avenir-demibold";
   }
   &__navbar--optionsleft:hover {
     border-bottom: 3px solid $white;
@@ -43,21 +47,19 @@ body {
   }
 
   &__navbar--optionsright {
-  width: 50%;
-  font-size: 14px;
-  text-align: center;
-  color: $mercury;
-  margin: 0;
-  padding: 8px;
-  font-family: 'avenir-demibold';
+    width: 50%;
+    font-size: 14px;
+    text-align: center;
+    color: $mercury;
+    margin: 0;
+    padding: 8px;
+    font-family: "avenir-demibold";
   }
   &__navbar--optionsright:hover {
     border-bottom: 3px solid $white;
     color: $white;
   }
-} 
-
-
+}
 
 @include medium {
   .header {
@@ -68,56 +70,54 @@ body {
     margin: 0;
     display: flex;
     flex-direction: row;
-  
+
     &__title {
       font-size: 36px;
       text-align: center;
       color: $white;
-      margin: 0 24px ;
-      font-family: 'avenir-demibold';      
-      }
-  
-    &__navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    margin-top: none;
+      margin: 0 24px;
+      font-family: "avenir-demibold";
     }
-    
+
+    &__navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      margin-top: none;
+    }
+
     &__navbar--optionsleft {
-    width: 40%;
-    font-size: 16px;
-    text-align: center;
-    color: $mercury;
-    margin: 0 50px;
-    padding: 27px;
-    font-family: 'avenir-demibold';
+      width: 40%;
+      font-size: 16px;
+      text-align: center;
+      color: $mercury;
+      margin: 0 50px;
+      padding: 27px;
+      font-family: "avenir-demibold";
     }
 
     &__navbar--optionsleft:hover {
       border-bottom: 3px solid $white;
       color: $white;
     }
-  
-    &__navbar--optionsright{
-    width: 40%;
-    font-size: 16px;
-    text-align: center;
-    color: $mercury;
-    margin: 0 50px;
-    padding: 27px;
-    font-family: 'avenir-demibold';
+
+    &__navbar--optionsright {
+      width: 40%;
+      font-size: 16px;
+      text-align: center;
+      color: $mercury;
+      margin: 0 50px;
+      padding: 27px;
+      font-family: "avenir-demibold";
     }
 
     &__navbar--optionsright:hover {
       border-bottom: 3px solid $white;
       color: $white;
     }
-  } 
+  }
 }
-
-
 
 @include large {
   .header {
@@ -128,49 +128,49 @@ body {
     margin: 0;
     display: flex;
     flex-direction: row;
-  
+
     &__title {
       font-size: 36px;
       text-align: center;
       color: $white;
       margin: 0 56px 0 180px;
-      font-family: 'avenir-demibold';      
-      }
-  
-    &__navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    margin-top: none;
+      font-family: "avenir-demibold";
     }
-    
+
+    &__navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      margin-top: none;
+    }
+
     &__navbar--optionsleft {
-    width: 70px;
-    font-size: 16px;
-    text-align: center;
-    color: $mercury;
-    padding: 27px 5px;
-    margin-right: 56px;
-    font-family: 'avenir-demibold';
+      width: 70px;
+      font-size: 16px;
+      text-align: center;
+      color: $mercury;
+      padding: 27px 5px;
+      margin-right: 56px;
+      font-family: "avenir-demibold";
     }
     &__navbar--optionsleft:hover {
       border-bottom: 3px solid $white;
       color: $white;
     }
-  
-    &__navbar--optionsright{
-    width: 40%;
-    font-size: 16px;
-    text-align: center;
-    color: $mercury;
-    padding: 27px 5px;
-    margin-right: 56px;
-    font-family: 'avenir-demibold';
+
+    &__navbar--optionsright {
+      width: 40%;
+      font-size: 16px;
+      text-align: center;
+      color: $mercury;
+      padding: 27px 5px;
+      margin-right: 56px;
+      font-family: "avenir-demibold";
     }
     &__navbar--optionsright:hover {
       border-bottom: 3px solid $white;
       color: $white;
     }
-  } 
+  }
 }

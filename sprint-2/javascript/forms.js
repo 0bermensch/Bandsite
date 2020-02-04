@@ -1,27 +1,43 @@
-let form = document.getElementById("comment--form");
+let form = document.getElementById("comment__form");
 
 form.addEventListener("submit", event => {
-  console.log("form submitted");
   event.preventDefault();
 
   let usercomment = {};
   usercomment.name = event.target.name.value;
   usercomment.comment = event.target.comment.value;
 
-  let userCommentSection = document.querySelector(".user--comment");
+  let userCommentSection = document.querySelector(".comment");
   let commentDiv = document.createElement("div");
-  commentDiv.classList.add("comment--output");
+  commentDiv.classList.add("comment__output");
+
+  let commentOutputUpper = document.createElement("div");
+  commentOutputUpper.classList.add("comment__upper");
+
+  let picOutput = document.createElement("div");
+  picOutput.classList.add("comment__pic");
 
   let nameOutput = document.createElement("h3");
-  nameOutput.classList.add("commenter--name");
+  nameOutput.classList.add("comment__name");
   nameOutput.innerText = usercomment.name;
-  commentDiv.appendChild(nameOutput);
+
+  let dateOutput = document.createElement("h3");
+  dateOutput.classList.add("comment__date");
+  let d = new Date();
+  let commentDate = d.getUTCDate();
+  let commentMonth = d.getUTCMonth();
+  let commentYear = d.getUTCFullYear();
+  dateOutput.innerHTML = `${commentDate}/ ${commentMonth}/ ${commentYear}`;
 
   let commentOutput = document.createElement("p");
-  commentOutput.classList.add("commenter--comment");
+  commentOutput.classList.add("comment__comment");
   commentOutput.innerText = usercomment.comment;
-  commentDiv.appendChild(commentOutput);
 
+  commentOutputUpper.appendChild(picOutput);
+  commentOutputUpper.appendChild(nameOutput);
+  commentOutputUpper.appendChild(dateOutput);
+  commentDiv.appendChild(commentOutputUpper);
+  commentDiv.appendChild(commentOutput);
   userCommentSection.appendChild(commentDiv);
 });
 
@@ -47,27 +63,27 @@ let defaultComment = [
 ];
 
 function generateDefaultComment(defaultCommentobj) {
-  let comments = document.querySelector(".default--comment");
+  let comments = document.querySelector(".defaultcomment");
 
   let commentSection = document.createElement("div");
-  commentSection.classList.add("default--comment--section");
+  commentSection.classList.add("defaultcomment__section");
 
   let commentUpper = document.createElement("div");
-  commentUpper.classList.add("default--comment--upper");
+  commentUpper.classList.add("defaultcomment__upper");
 
   let commenterPic = document.createElement("div");
-  commenterPic.classList.add("default--comment--pic");
+  commenterPic.classList.add("defaultcomment__pic");
 
   let commenterName = document.createElement("h3");
-  commenterName.classList.add("default--comment--name");
+  commenterName.classList.add("defaultcomment__name");
   commenterName.innerText = defaultCommentobj.name;
 
   let commenterDate = document.createElement("h3");
-  commenterDate.classList.add("default--comment--date");
+  commenterDate.classList.add("defaultcomment__date");
   commenterDate.innerText = defaultCommentobj.date;
 
   let commenterComment = document.createElement("p");
-  commenterComment.classList.add("defautl--comment--comment");
+  commenterComment.classList.add("defaultcomment__comment");
   commenterComment.innerText = defaultCommentobj.comment;
 
   commentUpper.appendChild(commenterPic);

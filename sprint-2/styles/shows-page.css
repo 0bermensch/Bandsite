@@ -30,6 +30,11 @@ body {
   padding: 0;
 }
 
+a {
+  color: #E1E1E1;
+  text-decoration: none;
+}
+
 .header {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -45,7 +50,7 @@ body {
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 7px;
-  font-family: 'avenir-demibold';
+  font-family: "avenir-demibold";
   margin-top: auto;
   padding-top: 10px;
 }
@@ -70,7 +75,7 @@ body {
   color: #E1E1E1;
   margin: 0;
   padding: 8px;
-  font-family: 'avenir-demibold';
+  font-family: "avenir-demibold";
 }
 
 .header__navbar--optionsleft:hover {
@@ -85,7 +90,7 @@ body {
   color: #E1E1E1;
   margin: 0;
   padding: 8px;
-  font-family: 'avenir-demibold';
+  font-family: "avenir-demibold";
 }
 
 .header__navbar--optionsright:hover {
@@ -115,7 +120,7 @@ body {
     text-align: center;
     color: #FFFFFF;
     margin: 0 24px;
-    font-family: 'avenir-demibold';
+    font-family: "avenir-demibold";
   }
   .header__navbar {
     display: -webkit-box;
@@ -138,7 +143,7 @@ body {
     color: #E1E1E1;
     margin: 0 50px;
     padding: 27px;
-    font-family: 'avenir-demibold';
+    font-family: "avenir-demibold";
   }
   .header__navbar--optionsleft:hover {
     border-bottom: 3px solid #FFFFFF;
@@ -151,7 +156,7 @@ body {
     color: #E1E1E1;
     margin: 0 50px;
     padding: 27px;
-    font-family: 'avenir-demibold';
+    font-family: "avenir-demibold";
   }
   .header__navbar--optionsright:hover {
     border-bottom: 3px solid #FFFFFF;
@@ -181,7 +186,7 @@ body {
     text-align: center;
     color: #FFFFFF;
     margin: 0 56px 0 180px;
-    font-family: 'avenir-demibold';
+    font-family: "avenir-demibold";
   }
   .header__navbar {
     display: -webkit-box;
@@ -204,7 +209,7 @@ body {
     color: #E1E1E1;
     padding: 27px 5px;
     margin-right: 56px;
-    font-family: 'avenir-demibold';
+    font-family: "avenir-demibold";
   }
   .header__navbar--optionsleft:hover {
     border-bottom: 3px solid #FFFFFF;
@@ -217,7 +222,7 @@ body {
     color: #E1E1E1;
     padding: 27px 5px;
     margin-right: 56px;
-    font-family: 'avenir-demibold';
+    font-family: "avenir-demibold";
   }
   .header__navbar--optionsright:hover {
     border-bottom: 3px solid #FFFFFF;
